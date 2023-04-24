@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bd86fb0609aee4dac8bf70a63474fd, type: 3}
+  m_Name: RatIdleAnim
+  m_EditorClassIdentifier: 
+  frameArray:
+  - {fileID: 634397931, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: 1635219897, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: 505351328, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: -518533836, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: -1771864047, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: -758852893, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: 1116303132, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: 44559278, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: -1514816212, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  - {fileID: 141585614, guid: b755384da923e1f40b10f95836795c1b, type: 3}
+  framesPerSecond: 10
