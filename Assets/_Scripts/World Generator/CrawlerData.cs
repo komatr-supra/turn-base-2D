@@ -6,6 +6,7 @@ namespace Turn2D.MapGenerator
     {
         private Vector2Int _gridPosition;
         public Vector2Int gridPosition => _gridPosition;
+        //this can be maybe deleted and used only parent... what about start node?
         public bool used;
         public Vector2Int parentPosition;
         public RoomType roomType;

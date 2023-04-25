@@ -119,6 +119,25 @@ namespace Turn2D.MapGenerator
             //todo complete method
             //there is a high chance to unused(unconnected) nodes
             //find them and set until there will be all connected
+            //queue - non usable nodes will be add to queue an proceeded at the end
+            Queue<CrawlerData> finalizeNodes = new();
+            foreach (var finalNode in GetGridSystem)
+            {
+                if(!finalNode.used) finalizeNodes.Enqueue(finalNode);
+            }
+            while (finalizeNodes.Count > 0)
+            {
+                //get node
+                var actualNode = finalizeNodes.Dequeue();
+                //get random used neighbours
+                var parentNodeList = gridCrawler.GetNeighbours(actualNode).Where(x => x.used).ToList();
+                if(parentNodeList.Count == 0)
+                {
+                    finalizeNodes.Enqueue(actualNode);
+                    continue;
+                } 
+                SetCrawler(actualNode, true, RoomType.normal, parentNodeList.RandomElement().gridPosition);
+            }
         }
 
         private void RemoveCrawlerFromPath(CrawlerData crawler)

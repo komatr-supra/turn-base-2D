@@ -27,6 +27,11 @@ namespace Turn2D.MapGenerator
             //rooms data
             CrawlerDungeonRoom crawlerDungeonRoom = new CrawlerDungeonRoom(width, height, pathLenght);
             var crawlerGridData = crawlerDungeonRoom.GetGridSystem;
+            //debug visual
+            foreach (var item in crawlerGridData)
+            {
+                
+            }
             //populate rooms in grid tileset
             
         }
